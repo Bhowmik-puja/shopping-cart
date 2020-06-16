@@ -108,6 +108,7 @@
       }
       function decrement(id1,id2,id3,n){
          var minusNumber = document.getElementById(id1).value;
+         if(minusNumber > 0){
          minusNumber--;
          document.getElementById(id1).value = minusNumber;
          var amount = document.getElementById(id2).innerText;
@@ -117,6 +118,8 @@
          var amount = amount1 + amount2;
          document.getElementById('subtotal').innerText = amount;
          document.getElementById('total').innerText = amount;
+         }
+         
       }
 
    </script>
